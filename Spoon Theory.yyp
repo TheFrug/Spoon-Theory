@@ -38,6 +38,7 @@
   "resources":[
     {"id":{"name":"fDefault","path":"fonts/fDefault/fDefault.yy",},},
     {"id":{"name":"fnt_smooth","path":"fonts/fnt_smooth/fnt_smooth.yy",},},
+    {"id":{"name":"fpixelify_md","path":"fonts/fpixelify_md/fpixelify_md.yy",},},
     {"id":{"name":"fpixelify","path":"fonts/fpixelify/fpixelify.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"obj_gameController","path":"objects/obj_gameController/obj_gameController.yy",},},
@@ -45,6 +46,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_addToLog","path":"scripts/scr_addToLog/scr_addToLog.yy",},},
     {"id":{"name":"scr_createButtons","path":"scripts/scr_createButtons/scr_createButtons.yy",},},
+    {"id":{"name":"scr_isLogTyping","path":"scripts/scr_isLogTyping/scr_isLogTyping.yy",},},
     {"id":{"name":"spr_ui_back","path":"sprites/spr_ui_back/spr_ui_back.yy",},},
     {"id":{"name":"spr_ui_box","path":"sprites/spr_ui_box/spr_ui_box.yy",},},
     {"id":{"name":"spr_ui_button","path":"sprites/spr_ui_button/spr_ui_button.yy",},},

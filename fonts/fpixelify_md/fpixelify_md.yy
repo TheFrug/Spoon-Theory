@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"fpixelify",
+  "%Name":"fpixelify_md",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":22,
@@ -117,7 +117,7 @@
   "last":0,
   "lineHeight":29,
   "maintainGms1Font":false,
-  "name":"fpixelify",
+  "name":"fpixelify_md",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

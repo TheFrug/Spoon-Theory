@@ -1,13 +1,13 @@
 //Player Stats
 randomize();
-playerSpoons = irandom_range(5, 15);
+playerSpoons = irandom_range(3, 8);
 playerCash = 0;
 
 //log params
 log_box_width = 650;
 log_box_height = 300;
 log_box_x = 75;
-log_box_y = 150;
+log_box_y = 170;
 
 //Log Setup
 logText = []; //An array (list) to hold lines of the log
@@ -20,27 +20,33 @@ global.currentScenarioIndex = 0;
 //Degine Narrative structure here
 global.choices = [
     [
-        {actionName: "Eat Breakfast", actionCost: 2, actionMessage: "You feel energized, but you're still tired."},
-        {actionName: "Skip Breakfast", actionCost: 0, actionMessage: "You feel a little hungry, but you saved spoons."},
-        {actionName: "Grab a Coffee", actionCost: 1, actionMessage: "The caffeine helps, but you can feel the cost."}
+        {actionName: "Spring out of Bed", actionCost: 3, actionMessage: "You jump out of bed, eyes still crusty. Some people do this every day!"},
+        {actionName: "Snooze Alarm", actionCost: 0, actionMessage: "The sweet nectar of sleep! It smells much nicer than it tastes, and you are awake before you know it."},
+        {actionName: "Mentally Prepare", actionCost: 1, actionMessage: "You imagine all the brilliant things you can do today... after you get off work."}
+    ],
+	[
+        {actionName: "Morning Exercise", actionCost: 3, actionMessage: "You feel silly breaking a sweat in your bedroom, but your body is hella thankful."},
+        {actionName: "Journal", actionCost: 1, actionMessage: "Once you pick up the pen, the words flow easily. You organize a little to-do list for yourself."},
+        {actionName: "Doomscroll", actionCost: 0, actionMessage: "Oh God, the news. You find out someone else you love lost rights today."}
     ],
     [
-        {actionName: "Take a Shower", actionCost: 2, actionMessage: "The hot water feels nice, and you got clean."},
-        {actionName: "Rest on the Couch", actionCost: 1, actionMessage: "Not as productive, but you saved energy."},
-        {actionName: "Start Work Early", actionCost: 3, actionMessage: "You get a head start but feel drained."}
+        {actionName: "Take a Shower", actionCost: 1, actionMessage: "The hot water is great! You step out feeling steaming fresh, like dumplings!"},
+        {actionName: "Rest on the Couch", actionCost: 0, actionMessage: "Not what I'd call productive, but at least you saved some energy."},
+        {actionName: "Start Work Early", actionCost: 3, actionMessage: "You sacrifice some of your priceless morning time to do some tasks, like a warm-up for your actual job."}
     ],
     [
-        {actionName: "Call a Friend", actionCost: 2, actionMessage: "You feel emotionally lifted."},
-        {actionName: "Ignore Messages", actionCost: 0, actionMessage: "You avoid stress, but feel isolated."},
-        {actionName: "Write in Journal", actionCost: 1, actionMessage: "You feel a little clarity."}
+        {actionName: "Make Breakfast", actionCost: 3, actionMessage: "It took some intense multitasking, but you made a great spread! Look at all those nutrients!"},
+        {actionName: "Coffee'll Do", actionCost: 0, actionMessage: "The important machine hisses 6oz of life fuel into a porcelain mug that reads '#1 Son'. Thanks, mom."},
+        {actionName: "Skip Food", actionCost: 1, actionMessage: "Despite your body's protests, you skip a meal. You'll have to buy it on the way..."}
     ]
 ];
 
 // Store the scenario descriptions in an array
 global.scenarios = [
-    "Your eyes swing open to the sound of a barely-rhythmic alarm beep. You overslept.",
-    "You're up, somehow. I suppose the day starts now.",
-    "You have a 15 minute break before its time for more riveting work!"
+    "Your eyes swing open, the sound of a barely-rhythmic beeping piercing your eardrums. You overslept.",
+    "Like it or not, you're up. That means it's time to start the day!",
+    "You have work in an hour. It feels like there's still so much to do...",
+	"You haven't eaten, yet, and your tummy has begun to throw a fit about it."
 ];
 
 
@@ -69,4 +75,3 @@ function assignChoicesToButtons(index) {
 
 assignChoicesToButtons(global.currentChoicesIndex);
 addToLog(global.scenarios[global.currentScenarioIndex], "scenario");
-global.currentScenarioIndex += 1;

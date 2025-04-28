@@ -3,7 +3,7 @@ draw_self();
 
 //Set up drawing
 draw_set_color(c_white);
-draw_set_font(fpixelify); 
+draw_set_font(fpixelify_md);
 draw_set_halign(fa_center); // Center the text horizontally
 draw_set_valign(fa_middle); // Center the text vertically
 
