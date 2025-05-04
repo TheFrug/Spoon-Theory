@@ -46,6 +46,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"scr_addToLog","path":"scripts/scr_addToLog/scr_addToLog.yy",},},
     {"id":{"name":"scr_createButtons","path":"scripts/scr_createButtons/scr_createButtons.yy",},},
+    {"id":{"name":"scr_endDay","path":"scripts/scr_endDay/scr_endDay.yy",},},
     {"id":{"name":"scr_isLogTyping","path":"scripts/scr_isLogTyping/scr_isLogTyping.yy",},},
     {"id":{"name":"spr_ui_back","path":"sprites/spr_ui_back/spr_ui_back.yy",},},
     {"id":{"name":"spr_ui_box","path":"sprites/spr_ui_box/spr_ui_box.yy",},},

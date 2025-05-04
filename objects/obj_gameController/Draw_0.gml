@@ -91,3 +91,6 @@ if (isLogTyping()) {
 	
     draw_text(prompt_x, prompt_y, prompt_text);
 }
+
+
+draw_text(300, 300, "Current Day:" + string(currentDay));

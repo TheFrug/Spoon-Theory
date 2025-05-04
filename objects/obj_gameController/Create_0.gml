@@ -1,17 +1,21 @@
-//Player Stats
+// Player Stats
 randomize();
 playerSpoons = irandom_range(3, 8);
 playerCash = 0;
 
-//log params
+// Log params
 log_box_width = 650;
 log_box_height = 300;
 log_box_x = 75;
 log_box_y = 170;
 
-//Log Setup
+// Log Setup
 logText = []; //An array (list) to hold lines of the log
 maxLogLines = 6; //Adjust based on how many lines you want to display
+
+// Day Count Tracking
+currentDay = 1;
+maxDays = 3;
 
 // Track the current choice and scenario index
 global.currentChoicesIndex = 0;

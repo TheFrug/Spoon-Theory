@@ -10,7 +10,8 @@ if (obj_gameController.playerSpoons >= actionCost) {
 	if (global.currentScenarioIndex < array_length(global.scenarios)) {
 		addToLog(global.scenarios[global.currentScenarioIndex], "scenario");
 	} else {
-	    addToLog("There are no more scenarios.", "other");
+		endDay();
+	    //addToLog("There are no more scenarios.", "other");
 	}
 	
     if (global.currentChoicesIndex < array_length(global.choices)) {
