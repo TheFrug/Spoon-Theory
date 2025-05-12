@@ -1,7 +1,7 @@
 {
   "$GMShader":"",
-  "%Name":"Shader1",
-  "name":"Shader1",
+  "%Name":"shd_wavyGradient",
+  "name":"shd_wavyGradient",
   "parent":{
     "name":"Shaders",
     "path":"folders/Shaders.yy",
