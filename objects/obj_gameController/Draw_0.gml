@@ -1,11 +1,11 @@
 var log_x = 20;
 var log_y = 400;
 var line_spacing = 10;
-var padding = 8;
+var padding = 15;
 var typing_speed = 2;
 var is_typing = true;
 
-draw_sprite_stretched(spr_ui_back, 0, log_box_x, log_box_y, log_box_width, log_box_height);
+draw_sprite_stretched(spr_ui_box, 0, log_box_x, log_box_y, log_box_width, log_box_height);
 
 // Set up drawing
 draw_set_font(fDefault);

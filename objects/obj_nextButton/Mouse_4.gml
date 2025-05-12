@@ -1,21 +1,17 @@
 if (!isLogTyping()) {
-    // Advance indexes
-    global.currentChoicesIndex += 1;
-    global.currentScenarioIndex += 1;
+    if (global.gameState == "narration") {
+        addToLog(global.pendingNarration, "other");
+        global.pendingNarration = "";
+        global.gameState = "ready_next";
+    } else if (global.gameState == "ready_next") {
+        global.currentScenarioIndex += 1;
 
-    // Display new scenario
-    if (global.currentScenarioIndex < array_length(global.scenarios)) {
-        addToLog(global.scenarios[global.currentScenarioIndex], "scenario");
-    } else {
-        endDay();
+        if (global.currentScenarioIndex < array_length(global.scenarios)) {
+            addToLog(global.scenarios[global.currentScenarioIndex], "scenario");
+            global.gameState = "waiting_choice";
+            obj_gameController.assignChoicesToButtons(global.currentChoicesIndex);
+        } else {
+            endDay(); // Handles resetting indexes and days
+        }
     }
-
-    if (global.currentChoicesIndex < array_length(global.choices)) {
-        obj_gameController.assignChoicesToButtons(global.currentChoicesIndex);
-    } else {
-        addToLog("You're out of choices for the day.", "other");
-    }
-
-    // Hide button until next log finishes typing
-    visible = false;
 }

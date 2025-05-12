@@ -1,3 +1,7 @@
+// Game states: "scenario", "waiting_choice", "result", "narration", "ready_next"
+global.gameState = "scenario";
+global.pendingNarration = "";
+
 // Player Stats
 randomize();
 playerSpoons = irandom_range(3, 8);
@@ -5,9 +9,9 @@ playerCash = 0;
 
 // Log params
 log_box_width = 650;
-log_box_height = 300;
+log_box_height = 340;
 log_box_x = 75;
-log_box_y = 170;
+log_box_y = 130;
 
 // Log Setup
 logText = []; //An array (list) to hold lines of the log
@@ -20,6 +24,9 @@ maxDays = 3;
 // Track the current choice and scenario index
 global.currentChoicesIndex = 0;
 global.currentScenarioIndex = 0;
+
+// Makes things work
+global.firstScenarioShown = true; // This will be true only once
 
 //Degine Narrative structure here
 global.choices = [
@@ -79,3 +86,4 @@ function assignChoicesToButtons(index) {
 
 assignChoicesToButtons(global.currentChoicesIndex);
 addToLog(global.scenarios[global.currentScenarioIndex], "scenario");
+global.gameState = "waiting_choice";
