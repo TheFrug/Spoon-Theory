@@ -43,6 +43,7 @@
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"obj_dayCounter","path":"objects/obj_dayCounter/obj_dayCounter.yy",},},
     {"id":{"name":"obj_gameController","path":"objects/obj_gameController/obj_gameController.yy",},},
+    {"id":{"name":"obj_nextButton","path":"objects/obj_nextButton/obj_nextButton.yy",},},
     {"id":{"name":"obj_skipPrompt","path":"objects/obj_skipPrompt/obj_skipPrompt.yy",},},
     {"id":{"name":"obj_spoonDisplay","path":"objects/obj_spoonDisplay/obj_spoonDisplay.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
