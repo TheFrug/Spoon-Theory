@@ -35,7 +35,7 @@ for (var i = 0; i < array_length(logText); i++) {
     // Set color based on type
     switch (entry.type) {
         case "scenario":
-            draw_set_color(c_yellow);
+            draw_set_color(c_white);
             break;
         case "result":
             draw_set_color(c_lime);
