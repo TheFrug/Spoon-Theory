@@ -49,7 +49,7 @@ for (var i = 0; i < array_length(logText); i++) {
     
     var visibleText = string_copy(entry.msg, 1, entry.current);
 
-    // ✨ Here's the manual word-wrapping
+    // Here's the manual word-wrapping
     var words = string_split(visibleText, " ");
     var line = "";
     for (var w = 0; w < array_length(words); w++) {
@@ -78,19 +78,4 @@ for (var i = 0; i < array_length(logText); i++) {
 
     logText[i] = entry;
 	
-
 }
-
-	// --- Draw "Press SPACE to Skip" prompt ---
-if (isLogTyping()) {	
-
-    var prompt_text = "Press [SPACE] to skip";
-	
-	var prompt_x = (log_box_x - 60) + (log_box_width / 2); // Center horizontally on the log box
-    var prompt_y = log_box_y - 30; // Slightly above the top of the log box (adjust -20 if needed)
-	
-    draw_text(prompt_x, prompt_y, prompt_text);
-}
-
-
-draw_text(300, 300, "Current Day:" + string(currentDay));

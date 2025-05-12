@@ -24,8 +24,8 @@
   "name":"spr_ui_spoon_text",
   "nineSlice":{
     "$GMNineSliceData":"",
-    "bottom":4,
-    "enabled":false,
+    "bottom":8,
+    "enabled":true,
     "guideColour":[4294902015,4294902015,4294902015,4294902015,],
     "highlightColour":1728023040,
     "highlightStyle":0,

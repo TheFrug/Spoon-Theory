@@ -1,4 +1,5 @@
-if (obj_gameController.playerSpoons >= actionCost) {
+if (!isLogTyping()){
+	if (obj_gameController.playerSpoons >= actionCost) {
     obj_gameController.playerSpoons -= actionCost;
     addToLog(actionMessage, "result");
 	
@@ -19,6 +20,8 @@ if (obj_gameController.playerSpoons >= actionCost) {
     } else {
         addToLog("You're out of choices for the day.", "other");
     }
-} else {
-    addToLog("Not enough spoons!", "other");
+	} else {
+	    addToLog("Not enough spoons!", "other");
+	}
+
 }

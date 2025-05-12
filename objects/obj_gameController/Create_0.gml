@@ -14,7 +14,7 @@ logText = []; //An array (list) to hold lines of the log
 maxLogLines = 6; //Adjust based on how many lines you want to display
 
 // Day Count Tracking
-currentDay = 1;
+global.currentDay = 1;
 maxDays = 3;
 
 // Track the current choice and scenario index

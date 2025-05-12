@@ -1,5 +1,7 @@
 draw_set_color(c_white);
 draw_set_font(fpixelify_md);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 
 // Draw the spoon icon in the top-left
 draw_sprite(spr_ui_icon_spoon, 0, icon_x, icon_y);

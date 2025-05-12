@@ -12,9 +12,9 @@ function endDay(){
     }
 
     // Advance to next day
-    obj_gameController.currentDay += 1;
+	global.currentDay += 1;
 
-    if (obj_gameController.currentDay > obj_gameController.maxDays) {
+    if (global.currentDay > obj_gameController.maxDays) {
         addToLog("You've made it to the end of the game. Well done!", "other");
         // Optional: trigger game over screen or final summary
         return;
@@ -26,7 +26,7 @@ function endDay(){
 
     // Optionally shuffle or refresh scenarios if you want randomness between days
 
-    addToLog("Day " + string(obj_gameController.currentDay) + " begins...", "scenario");
+    addToLog("Day " + string(global.currentDay) + " begins...", "scenario");
 
     obj_gameController.assignChoicesToButtons(global.currentChoicesIndex);
     addToLog(global.scenarios[global.currentScenarioIndex], "scenario");
